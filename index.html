@@ -28,16 +28,23 @@
 			top: 70px;
 			position: fixed;
 		}
+		.floating-menu{
+			position: fixed;
+			top: 120px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
 		.menu-button{
 			background-color: #F7F5EC;
 			color: #000000;
 			width: 80px;
-			height: 80px;
+			height: 30px;
 			text-align: center;
-			line-height: 80px;
+			line-height: 30px;
 			font-family: "Akrobat Black";
-			font-size: 16px;
+			font-size: 12px;
 			margin: 0px;
+			text-decoration: none;
 		}
 		.menu-button:hover{
 			background-color: #e0d6b8;
@@ -47,33 +54,31 @@
 			text-align: center;
 			line-height: 80px;
 			font-family: "Akrobat Black";
-			font-size: 16px;
+			font-size: 18px;
 			margin: 0px;
+			text-decoration: none;
 		}
 		.menu-button-side{
 			background-color: #F7F5EC;
 			color: #000000;
 			width: 150px;
-			height: 40px;
-			text-align: right;
-			line-height: 40px;
+			height: auto;
+			text-align: center;
 			font-family: "Akrobat Black";
-			font-size: 16px;
-			margin: 5px;
-			padding-right: 10px;
+			font-size: 10px;
+			margin: 0px;
+			right: 0px;
 		}
 		.menu-button-side:hover{
 			background-color: #e0d6b8;
 			color: #000000;
 			width: 150px;
 			height: 40px;
-			text-align: right;
-			line-height: 40px;
+			text-align: center;
 			font-family: "Akrobat Black";
 			font-size: 16px;
-			margin: 5px;
-			padding-right: 10px;
-			align-content: right;
+			margin: 0px;
+			line-height: 40px;
 		}
 
 
@@ -83,7 +88,7 @@
 			margin: 10px;
 			color: #F7F5EC;
 			word-wrap: break-word;
-			font-family: "myriad pro";
+			font-family: "Akrobat medium";
 		}
 		h1{
 			font-family: "Akrobat ExtraBold";
@@ -98,35 +103,44 @@
 		.td-navigate{
 			text-align: right;
 			color: #d1c294;
-
+			top: 200px;
+			right: 0px;
+			position: fixed;
+		}
+		p{
+			text-decoration: none;
+		}
+		a{
+			text-decoration: none;
 		}
 	</style>
 </head>
+
 <body style="background-color: #333333">
-	<div style="height: 120px">	</div>
+	<div style="height: 150px">	</div>
 	<p class="menu">Makham</p>
 	<p class="submenu">The classiest fruit in the world</p>
 
-	<table align="center">
+	<table class="floating-menu">
 		<td style="border: 0px">
 			<td style="padding: 0px"><a href="index.html">
-				<p class="menu-button">
+				<p class="menu-button";>
 				HOME
 				</p></a>
 			</td>
-			
+
 			<td style="padding: 0px"><a href="post.html">
 				<p class="menu-button">
 				POST
 				</p></a>
 			</td>
-			
+
 			<td style="padding: 0px"><a href="image.html">
 				<p class="menu-button">
 				IMAGE
 				</p></a>
 			</td>
-			
+
 			<td style="padding: 0px"><a href="about.html">
 				<p class="menu-button">
 				ABOUT
@@ -134,53 +148,55 @@
 			</td>
 		</tr>
 	</table>
-	
+
 	<table>
 		<td width="100%">
 	<div class="content-general";>
 		<h1>Welcome to makham</h1>
 
 		<pre>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna 
+sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna 
+sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna 
+sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-sed do eiusmod tempor incididunt ut labore et dolore magna 
+sed do eiusmod tempor incididunt ut labore et dolore magna
 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
+in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
 qui officia deserunt mollit anim id est laborum.
 		</pre>
 	</div>
 
 		</td>
 
-		<td class="td-navigate"; width="300px";>
-			<pre>Side menu</pre>
-			<p class="menu-button-side">Welcome</p>
-			<p class="menu-button-side">Benefit of makham</p>
-			<p class="menu-button-side">Benefit of makham 2</p>
-			<p class="menu-button-side">Benefit of makham 3</p>
+		<td width="300px";>
+
 		</td>
 	</table>
+	<div class="td-navigate" style="align-content: right">
+		<p class="menu-button-side">Welcome</p>
+		<p class="menu-button-side">Benefit of makham</p>
+		<p class="menu-button-side">Benefit of makham 2</p>
+		<p class="menu-button-side">Benefit of makham 3</p>
+	</div>
 
 </body>
 </html>
