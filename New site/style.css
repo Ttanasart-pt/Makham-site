@@ -179,9 +179,9 @@ hr{
 	background-color: #F7F5EC;
 	box-shadow: 0px 0px 30px #000000;
 	padding: 10px;
-	opacity: 0.60;
+	opacity: 0.50;
 
-	transition: opacity 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .content-box-appear:hover{
 	background-color: #F7F5EC;
@@ -201,10 +201,11 @@ hr{
 	opacity: 0.60;
 	height: auto;
 	width: 800px;
-	transition: opacity 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .post-box-wide:hover{
 	opacity: 0.85;
+	box-shadow: 0px 0px 50px #000000;
 }
 .post-box-half{
 	background-color: #F7F5EC;
@@ -302,8 +303,8 @@ hr{
 }
 .image-zoom:hover{
 	transform: scale(1.5,1.5);
-	box-shadow: 0px 0px 40px #000000;
-	z-index: 100;
+	box-shadow: 10px 10px 30px #000000;
+	z-index: -1; 
 }
 .image-zoom:full{
 	position: fixed;
@@ -313,4 +314,10 @@ hr{
 	transform: translateX(-50%);
 	transform: translateY(-50%);
 	
+}
+.work-show{
+	display: block;
+}
+.work-show td{
+	display: inline-block;
 }
