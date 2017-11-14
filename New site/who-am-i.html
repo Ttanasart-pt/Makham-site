@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Makham Farmer</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style>
+		body{
+			background-image: url("sorce-img/tamarind 11.png");
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+		}
+		#bullet-intro:hover ~ #box-intro{
+			opacity: 0.85;
+			transform: scale(1.5,1.5);
+		}
+	</style>
+</head>
+
+<body>
+	<script type="text/javascript">
+		(function($) {
+	    $.fn.goTo = function() {
+		        $('html, body').animate({
+		            scrollTop: $(this).offset().top + 'px'
+		        }, 'slow');
+		        return this;
+		    }
+		})
+		(jQuery);
+
+	</script>
+
+	<div class="navigation-side">
+		<div>
+			<a onclick="$('#intro').goTo()"><img id="bullet-intro" class="navigation-link" src="sorce-img/layout/page bullet.png"/></a>
+
+			<a onclick="$('#educate').goTo()"><img id="bullet-educa" class="navigation-link" src="sorce-img/layout/page bullet.png"/></a>
+			
+			<a onclick="$('#skill').goTo()"><img id="bullet-skill" class="navigation-link" src="sorce-img/layout/page bullet.png"/></a>
+		</div>
+	</div>
+	<div align="center">
+		<table>
+			<tr id="intro" style="height: 75px"></tr>
+			<tr>
+				<td>
+					<div id="box-intro" class="content-box-appear" style="width: 600px; height: 750px">
+						<h1>Who am I?</h1>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum nisi, tincidunt at ante eget, porttitor venenatis dolor. Duis elementum leo vel tristique vehicula. Curabitur imperdiet et augue ut molestie. Duis id lectus eros. Duis eu posuere erat. Sed in leo eget ligula tempor porta. Curabitur at nunc eget massa tristique pellentesque. Vivamus non ante quis dui varius rutrum. Praesent tincidunt dui sit amet augue tincidunt consectetur. Nullam id massa nec odio vulputate tempus eget et lacus.
+						</p>
+							
+					</div>		
+				</td>
+			</tr>
+			<tr id="educate" style="height: 75px"></tr>
+			<tr>
+				<td>
+					<div id="box-educa" class="content-box-appear" style="width: 600px; height: 750px">
+						<h1>
+							Education
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum nisi, tincidunt at ante eget, porttitor venenatis dolor. Duis elementum leo vel tristique vehicula. Curabitur imperdiet et augue ut molestie. Duis id lectus eros. Duis eu posuere erat. Sed in leo eget ligula tempor porta. Curabitur at nunc eget massa tristique pellentesque. Vivamus non ante quis dui varius rutrum. Praesent tincidunt dui sit amet augue tincidunt consectetur. Nullam id massa nec odio vulputate tempus eget et lacus.</p>
+					</div>
+				</td>
+			</tr>
+			<tr id="skill" style="height: 75px"></tr>
+			<tr>
+				<td>
+					<div id="box-skill" class="content-box-appear" style="width: 600px; height: 750px">
+						<h1>
+							Skill and hobbies
+						</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ipsum nisi, tincidunt at ante eget, porttitor venenatis dolor. Duis elementum leo vel tristique vehicula. Curabitur imperdiet et augue ut molestie. Duis id lectus eros. Duis eu posuere erat. Sed in leo eget ligula tempor porta. Curabitur at nunc eget massa tristique pellentesque. Vivamus non ante quis dui varius rutrum. Praesent tincidunt dui sit amet augue tincidunt consectetur. Nullam id massa nec odio vulputate tempus eget et lacus.</p>
+					</div>
+				</td>
+			</tr>
+			<tr style="height: 75px"></tr>
+		</table>
+		
+	</div>
+
+	<div style="height: 50px"></div>
+
+	<div>
+		<img class="menu-bg" src="sorce-img/layout/menu-grow.png"/>
+		<div class="menubar">
+			MAKHAM FARMER
+		</div>
+
+		<table class="menu-button-frame">
+			<td class="menu-button-button"> 
+				<a href="index.html">HOME</a>
+			</td>
+			<td class="menu-button-button"> 
+				<a href="works.html">WORKS</a>
+			</td>
+			<td class="menu-button-thispage">WHO AM I</td>
+			<td class="menu-button-button"> 
+				<a href="post.html">POSTS</a>
+			</td>
+			<td class="menu-button-button"> 
+				<a href="contact.html">CONTACT</a>
+			</td>
+		</table>
+	</div>
+	
+
+</body>
+
+</html>

@@ -1,0 +1,303 @@
+body{
+	background-color: #F7F5EC;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+p{
+	font-family: "Crimson text";
+	font-size: 22px;
+	color: #222222;
+	margin: 20px;
+	text-indent: 50px;
+}
+h1{
+	font-family: "Spectral SC Medium";
+	font-size: 28px;
+	color: #5d3d00;	
+	margin: 10px;
+	padding: 0px;
+}
+h2{
+	font-family: "Spectral SC Light";
+	font-size: 16px;
+	color: #888888;
+	letter-spacing: 5px;
+	margin: 10px;
+	line-height: 0px;
+}
+h3{
+	font-family: "Spectral SC Light";
+	font-size: 12px;
+	color: #888888;
+	letter-spacing: 2px;
+	margin: 10px;
+	line-height: 0px;
+}
+
+tr{
+	margin: 10px;
+	padding: 10px;
+}
+td{
+	margin: 10px;
+	padding: 10px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+.bg-holder{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+}
+@keyframes cf3Fadeinout{
+	0% {
+  		opacity:1;
+	}
+	40% {
+		opacity:1;
+	}
+	60% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+	}
+}
+
+#cf{
+	position: absolute;
+	margin: 0 auto;
+}
+#cf img{
+	position: fixed;
+	left: 0;
+	top: 0;
+	-webkit-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+
+
+}
+#cf img.image1{
+	animation-name: cf3Fadeinout;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;
+}
+#cf img.image2{
+}
+
+.menubar{
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+
+	background-color: #333333;
+	color: #F7F5EC;
+
+	text-align: center;
+	font-family: "Spectral SC Medium";
+	font-size: 20px;
+	line-height: 40px;
+	letter-spacing: 8px;
+
+	transition: letter-spacing 0.5s ease-in-out;
+}
+.menubar:hover{
+	letter-spacing: 16px;
+}
+.menu-bg{
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 80%;
+	height: 20%;
+	opacity: 1;
+}
+
+.menu-button-frame{
+	bottom: 50px;	
+	left: 50%;	
+	transform: translateX(-50%);
+	position: fixed;
+}
+.menu-button-button{
+	width: 150px;
+	height: 20px;
+
+	color: #555555;
+
+	text-align: center;
+	font-family: "Spectral SC Medium";
+	font-size: 12px;
+	line-height: 20px;
+	margin: 0px;
+	letter-spacing: 3px;
+
+	transition: font-size 0.1s ease-in-out;
+}
+.menu-button-button:hover{
+	color: #333333;
+	font-size: 16px;
+}
+
+.menu-button-thispage{
+	width: 150px;
+	height: 20px;
+
+	color: #333333;
+
+	text-align: center;
+	font-family: "Spectral SC Medium";
+	font-size: 18px;
+	line-height: 20px;
+	margin: 0px;
+	letter-spacing: 3px;
+
+	transition: letter-spacing 0.2s ease-in-out;
+}
+.menu-button-thispage:hover{
+	letter-spacing: 6px;
+}
+
+.content-box-appear{
+	background-color: #F7F5EC;
+	box-shadow: 0px 0px 30px #000000;
+	padding: 10px;
+	opacity: 0.60;
+
+	transition: opacity 0.2s ease-in-out;
+}
+.content-box-appear:hover{
+	background-color: #F7F5EC;
+	box-shadow: 0px 0px 30px #000000;
+	padding: 10px;
+	opacity: 0.85;
+}
+
+.post-box-wide{
+	background-color: #F7F5EC;
+	box-shadow: 0px 0px 30px #000000;
+	padding-top:  50px;
+	padding-bottom: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+
+	opacity: 0.60;
+	height: auto;
+	width: 800px;
+	transition: opacity 0.2s ease-in-out;
+}
+.post-box-wide:hover{
+	opacity: 0.85;
+}
+.post-box-half{
+	background-color: #F7F5EC;
+	box-shadow: 0px 0px 30px #000000;
+	padding-top:  50px;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+
+	opacity: 0.60;
+	height: auto;
+	width: 438px;
+	transition: opacity 0.2s ease-in-out;
+}
+.post-box-half:hover{
+	opacity: 0.9;
+}
+
+.image-box-appear{
+	background-color: #F7F5EC;
+	box-shadow: 0px 0px 30px #000000;
+	padding: 10px;
+	opacity: 0.75;	
+}
+
+.navigation-side{
+	align: center;
+	align-items: center; 
+	position: fixed;
+	width: 32px;
+	right: 8px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.navigation-link{
+	opacity: 0.25;
+	width: 100%;
+	height: 100%;
+
+	transition: all 0.25s ease-in-out;
+}
+.navigation-link:hover{
+	opacity: 0.85;
+	transform: scale(1.5,1.5);
+}
+.navigation-text{
+	position: absolute;
+	right: 16px;
+	top: -12px;
+
+	font-family: "Spectral SC";
+	font-size: 12px;
+	color: #222222;
+	text-align: right;
+
+	transition: all 0.2s ease-in-out;
+}
+.navigation-text{
+	position: absolute;
+	right: 16px;
+	top: -12px;
+
+	font-family: "Spectral SC";
+	font-size: 18px;
+	color: #222222;
+	text-align: right;
+}
+.social-icon{
+	width: 225px;
+	height: auto;
+	box-shadow: 0px 0px 30px #222222;
+
+	transition: all 0.2s ease-in-out;
+}
+.social-icon:hover{
+	transform: scale(1.1,1.1);
+	box-shadow: 0px 0px 50px #000000;
+}
+.social-text{
+	font-family: "Spectral SC";
+	font-size: 14px;
+	color: #333333;
+	text-align: center;
+}
+.huge-text{
+	font-family : "Spectral SC";
+	font-size: 36px;
+	text-align: left; 
+}
+.image-zoom{
+	box-shadow: 0px 0px 20px #222222;
+	margin: 10px;
+
+	transition: all 0.2s ease-in-out;
+}
+.image-zoom:hover{
+	transform: scale(1.5,1.5);
+	box-shadow: 0px 0px 40px #000000;
+	z-index: 100;
+}
