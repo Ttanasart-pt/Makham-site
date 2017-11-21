@@ -47,7 +47,7 @@ td{
 	padding: 10px;
 }
 hr{
-	opacity: 0.5;
+	opacity: 0.4;
 	width: 80%;
 }
 ::-webkit-scrollbar {
@@ -176,52 +176,85 @@ hr{
 }
 
 .content-box-appear{
-	background-color: #F7F5EC;
+	background-color: rgba(247,245,236,0.3);
 	box-shadow: 0px 0px 30px #000000;
 	padding: 10px;
-	opacity: 0.50;
-
 	transition: all 0.2s ease-in-out;
 }
 .content-box-appear:hover{
-	background-color: #F7F5EC;
+	background-color: rgba(247,245,236,0.75);
 	box-shadow: 0px 0px 30px #000000;
 	padding: 10px;
-	opacity: 0.85;
 }
 
 .post-box-wide{
-	background-color: #F7F5EC;
+	background-color: rgba(247,245,236,0.3);
 	box-shadow: 0px 0px 30px #000000;
 	padding-top:  50px;
 	padding-bottom: 50px;
 	padding-left: 150px;
 	padding-right: 150px;
-
-	opacity: 0.60;
 	height: auto;
 	width: 800px;
 	transition: all 0.2s ease-in-out;
 }
 .post-box-wide:hover{
-	opacity: 0.85;
+	background-color: rgba(247,245,236,0.75);
 	box-shadow: 0px 0px 50px #000000;
 }
+.post-box-compose{
+	background-color: rgba(247,245,236,0.3);
+	box-shadow: 0px 0px 30px #000000;
+	padding-top:  50px;
+	padding-bottom: 50px;
+	padding-left: 150px;
+	padding-right: 150px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translateY(-50%) translateX(-50%);
+
+	width: 800px;
+	height: auto;
+	min-height: 300px;
+	margin: 0px;
+	transition: all 0.2s ease-in-out;
+	clear: both;
+}
+.post-box-compose:hover{
+	box-shadow: 0px 0px 50px #000000;
+	background-color: rgba(247,245,236,0.75);
+}
+
+.post-img{
+	width: 40px; 
+	height: auto; 
+	opacity: 0.3;
+	transform: scale(0.5);
+	transition: all 0.1s ease-in-out;
+}
+.post-img:hover{
+	transform: scale(1);
+	opacity: 1;
+
+}
+
+
+
 .post-box-half{
-	background-color: #F7F5EC;
+	background-color: rgba(247,245,236,0.3);
 	box-shadow: 0px 0px 30px #000000;
 	padding-top:  50px;
 	padding-bottom: 50px;
 	padding-left: 50px;
 	padding-right: 50px;
 
-	opacity: 0.60;
 	height: auto;
 	width: 438px;
-	transition: opacity 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 .post-box-half:hover{
-	opacity: 0.9;
+	background-color: rgba(247,245,236,0.75);
 }
 
 .image-box-appear{
@@ -320,4 +353,25 @@ hr{
 }
 .work-show td{
 	display: inline-block;
+}
+.post-title{
+	background-color: rgba(255,255,255,0.3);
+	box-shadow: 0px 0px 100px #000000;
+	border: none;
+	width: 800px;
+	height: 30px;
+	margin: auto;
+	clear: both;
+	text-align: center;
+
+	transition: all 0.2s ease-in-out;
+}
+.post-title:hover{
+	background-color: rgba(255,255,255,0.75);
+	box-shadow: 0px 0px 30px #000000;
+
+	transition: all 0.2s ease-in-out;
+}
+.short-hr{
+	width: 800px;
 }

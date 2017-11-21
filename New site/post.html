@@ -25,6 +25,22 @@
 	<div style="height: 20px"></div>
 	
 	<table align="center">
+		<tr style="padding: 0px">
+			<td colspan="2">
+				<div align="center"style="padding-top: 10px; padding-bottom: 0px; ">
+					<a href="post-edit.html">
+						<img class="post-img" src="sorce-img/layout/add.png"/>
+					</a>
+				</div>
+				<script type="text/javascript">
+					n = new Date();
+					y = n.getFullYear();
+					m = n.getMonth();
+					d = n.getDate();
+					document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+				</script>
+			</td>
+		</tr>
 		<tr>
 			<td colspan="2">
 				<div class="post-box-wide">
